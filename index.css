@@ -1,0 +1,38 @@
+html, body {
+    height: 98%;
+    width: 99%;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.content__dice-panel {
+    background-color: peachpuff;
+}
+
+.content__result-display {
+    background-color: lightgray;
+    font-family: Courier Courier New, Courier, monospace;
+    font-size: 2em;
+    height: 20%;
+    text-align: center;
+    width: 50%;
+}
+
+.button {
+    background-color: rgb(245,245,245);
+    border: 1px solid black;
+    display: inline-block;
+    font-size: 2em;
+    height: 100px;
+    margin: 5px;
+    width: 100px;
+}
+
+#blinker {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+}

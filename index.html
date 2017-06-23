@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dice Roller</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+<div class="content content__dice-panel">
+    <div id="blinker"></div>
+    
+    <button class="button" onclick='roll(1, 4)'>d4</button>
+    <button class="button" onclick='roll(1, 6)'>d6</button>
+    <button class="button" onclick='roll(1, 8)'>d8</button>
+    <button class="button" onclick='roll(1, 10)'>d10</button>
+    <button class="button" onclick='roll(1, 12)'>d12</button>
+    <button class="button" onclick='roll(1, 20)'>d20</button>
+    <button class="button" onclick='roll(1, 100)'>d100</button>
+    <br \>
+    <button class="button" onclick='exRoll(1, 1)'>EX 1</button>
+    <button class="button" onclick='exRoll(2, 1)'>EX 2</button>
+    <button class="button" onclick='exRoll(3, 1)'>EX 3</button>
+    <button class="button" onclick='exRoll(4, 1)'>EX 4</button>
+    <button class="button" onclick='exRoll(5, 1)'>EX 5</button>
+    <button class="button" onclick='exRoll(6, 1)'>EX 6</button>
+    <br \>
+    <button class="button" onclick='srRoll(1)'>SR 1</button>
+    <button class="button" onclick='srRoll(2)'>SR 2</button>
+    <button class="button" onclick='srRoll(3)'>SR 3</button>
+    <button class="button" onclick='srRoll(4)'>SR 4</button>
+    <button class="button" onclick='srRoll(5)'>SR 5</button>
+    <button class="button" onclick='srRoll(6)'>SR 6</button>
+    <br \>
+
+    <div id="result-display" class="content content__result-display">
+        <p><b>RESULT</b></p>
+        <p><b>0</b></p>
+
+    </div>
+
+</div>
+
+        
+</body>
+
+</html>
