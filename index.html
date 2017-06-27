@@ -10,9 +10,13 @@
 
 <body>
 
-<div class="content content__dice-panel">
+<div class="content content__dice-panel" id="content">
     <div id="blinker"></div>
-    
+    <button class="button" onclick='loadStandard()'>ST</button>
+    <button class="button" onclick='loadExalted()'>EX</button>
+    <button class="button" onclick='loadShadowrun()'>SR</button>
+
+    <div id="dice-layout">
     <button class="button" onclick='roll(1, 4)'>d4</button>
     <button class="button" onclick='roll(1, 6)'>d6</button>
     <button class="button" onclick='roll(1, 8)'>d8</button>
@@ -35,6 +39,7 @@
     <button class="button" onclick='srRoll(5)'>SR 5</button>
     <button class="button" onclick='srRoll(6)'>SR 6</button>
     <br \>
+    </div>
 
     <div id="result-display" class="content content__result-display">
         <p><b>RESULT</b></p>
