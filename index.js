@@ -25,9 +25,14 @@ function dieRoll(dieNum, dieSize) {  //rolls a number of dice of a certain size 
     return dieTotal;
 }
 
-function exDieRoll(dieNum, double10s) { //rolls dice from Exalted; ten-sided dice, target number 7, 10s count twice if double10s is true, returns successes
+function exDieRoll(dieNum) { //rolls dice from Exalted; ten-sided dice, target number 7, 10s count twice if double10s is true, returns successes
     //This doesn't yet handle funky charms like "reroll 6s once" and such; it'll eventually do that, but it's not a top priority
+    //Double10s is now based on whether the matching checkbox is checked
     var dieSize = 10; //Exalted dice are always d10s
+    var double10s = false;
+    if (document.getElementById("double10s").checked == true) {
+        double10s = true;
+    }
 
     //Simple error handling
     if (dieNum < 1) {
@@ -145,38 +150,40 @@ function loadStandard(){
 function loadExalted(){
     var fakeJSX = '\
         <div id="dice-layout">\
-        <button class="button" onclick="exRoll(1, 1)">EX 1</button>\
-        <button class="button" onclick="exRoll(2, 1)">EX 2</button>\
-        <button class="button" onclick="exRoll(3, 1)">EX 3</button>\
-        <button class="button" onclick="exRoll(4, 1)">EX 4</button>\
-        <button class="button" onclick="exRoll(5, 1)">EX 5</button>\
-        <button class="button" onclick="exRoll(6, 1)">EX 6</button>\
-        <button class="button" onclick="exRoll(7, 1)">EX 7</button>\
-        <button class="button" onclick="exRoll(8, 1)">EX 8</button>\
-        <button class="button" onclick="exRoll(9, 1)">EX 9</button>\
-        <button class="button" onclick="exRoll(10, 1)">EX 10</button>\
+        <button class="button" onclick="exRoll(1)">EX 1</button>\
+        <button class="button" onclick="exRoll(2)">EX 2</button>\
+        <button class="button" onclick="exRoll(3)">EX 3</button>\
+        <button class="button" onclick="exRoll(4)">EX 4</button>\
+        <button class="button" onclick="exRoll(5)">EX 5</button>\
+        <button class="button" onclick="exRoll(6)">EX 6</button>\
+        <button class="button" onclick="exRoll(7)">EX 7</button>\
+        <button class="button" onclick="exRoll(8)">EX 8</button>\
+        <button class="button" onclick="exRoll(9)">EX 9</button>\
+        <button class="button" onclick="exRoll(10)">EX 10</button>\
         <br \>\
-        <button class="button" onclick="exRoll(11, 1)">EX 11</button>\
-        <button class="button" onclick="exRoll(12, 1)">EX 12</button>\
-        <button class="button" onclick="exRoll(13, 1)">EX 13</button>\
-        <button class="button" onclick="exRoll(14, 1)">EX 14</button>\
-        <button class="button" onclick="exRoll(15, 1)">EX 15</button>\
-        <button class="button" onclick="exRoll(16, 1)">EX 16</button>\
-        <button class="button" onclick="exRoll(17, 1)">EX 17</button>\
-        <button class="button" onclick="exRoll(18, 1)">EX 18</button>\
-        <button class="button" onclick="exRoll(19, 1)">EX 19</button>\
-        <button class="button" onclick="exRoll(20, 1)">EX 20</button>\
+        <button class="button" onclick="exRoll(11)">EX 11</button>\
+        <button class="button" onclick="exRoll(12)">EX 12</button>\
+        <button class="button" onclick="exRoll(13)">EX 13</button>\
+        <button class="button" onclick="exRoll(14)">EX 14</button>\
+        <button class="button" onclick="exRoll(15)">EX 15</button>\
+        <button class="button" onclick="exRoll(16)">EX 16</button>\
+        <button class="button" onclick="exRoll(17)">EX 17</button>\
+        <button class="button" onclick="exRoll(18)">EX 18</button>\
+        <button class="button" onclick="exRoll(19)">EX 19</button>\
+        <button class="button" onclick="exRoll(20)">EX 20</button>\
         <br \>\
-        <button class="button" onclick="exRoll(21, 1)">EX 21</button>\
-        <button class="button" onclick="exRoll(22, 1)">EX 22</button>\
-        <button class="button" onclick="exRoll(23, 1)">EX 23</button>\
-        <button class="button" onclick="exRoll(24, 1)">EX 24</button>\
-        <button class="button" onclick="exRoll(25, 1)">EX 25</button>\
-        <button class="button" onclick="exRoll(26, 1)">EX 26</button>\
-        <button class="button" onclick="exRoll(27, 1)">EX 27</button>\
-        <button class="button" onclick="exRoll(28, 1)">EX 28</button>\
-        <button class="button" onclick="exRoll(29, 1)">EX 29</button>\
-        <button class="button" onclick="exRoll(30, 1)">EX 30</button>\
+        <button class="button" onclick="exRoll(21)">EX 21</button>\
+        <button class="button" onclick="exRoll(22)">EX 22</button>\
+        <button class="button" onclick="exRoll(23)">EX 23</button>\
+        <button class="button" onclick="exRoll(24)">EX 24</button>\
+        <button class="button" onclick="exRoll(25)">EX 25</button>\
+        <button class="button" onclick="exRoll(26)">EX 26</button>\
+        <button class="button" onclick="exRoll(27)">EX 27</button>\
+        <button class="button" onclick="exRoll(28)">EX 28</button>\
+        <button class="button" onclick="exRoll(29)">EX 29</button>\
+        <button class="button" onclick="exRoll(30)">EX 30</button>\
+        <br \>\
+        Double 10? <input id="double10s" type="checkbox" name="bob" value="yay" checked=true></input>\
         </div>\
     '
 
