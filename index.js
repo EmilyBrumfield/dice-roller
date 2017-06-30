@@ -151,6 +151,32 @@ function loadExalted(){
         <button class="button" onclick="exRoll(4, 1)">EX 4</button>\
         <button class="button" onclick="exRoll(5, 1)">EX 5</button>\
         <button class="button" onclick="exRoll(6, 1)">EX 6</button>\
+        <button class="button" onclick="exRoll(7, 1)">EX 7</button>\
+        <button class="button" onclick="exRoll(8, 1)">EX 8</button>\
+        <button class="button" onclick="exRoll(9, 1)">EX 9</button>\
+        <button class="button" onclick="exRoll(10, 1)">EX 10</button>\
+        <br \>\
+        <button class="button" onclick="exRoll(11, 1)">EX 11</button>\
+        <button class="button" onclick="exRoll(12, 1)">EX 12</button>\
+        <button class="button" onclick="exRoll(13, 1)">EX 13</button>\
+        <button class="button" onclick="exRoll(14, 1)">EX 14</button>\
+        <button class="button" onclick="exRoll(15, 1)">EX 15</button>\
+        <button class="button" onclick="exRoll(16, 1)">EX 16</button>\
+        <button class="button" onclick="exRoll(17, 1)">EX 17</button>\
+        <button class="button" onclick="exRoll(18, 1)">EX 18</button>\
+        <button class="button" onclick="exRoll(19, 1)">EX 19</button>\
+        <button class="button" onclick="exRoll(20, 1)">EX 20</button>\
+        <br \>\
+        <button class="button" onclick="exRoll(21, 1)">EX 21</button>\
+        <button class="button" onclick="exRoll(22, 1)">EX 22</button>\
+        <button class="button" onclick="exRoll(23, 1)">EX 23</button>\
+        <button class="button" onclick="exRoll(24, 1)">EX 24</button>\
+        <button class="button" onclick="exRoll(25, 1)">EX 25</button>\
+        <button class="button" onclick="exRoll(26, 1)">EX 26</button>\
+        <button class="button" onclick="exRoll(27, 1)">EX 27</button>\
+        <button class="button" onclick="exRoll(28, 1)">EX 28</button>\
+        <button class="button" onclick="exRoll(29, 1)">EX 29</button>\
+        <button class="button" onclick="exRoll(30, 1)">EX 30</button>\
         </div>\
     '
 
