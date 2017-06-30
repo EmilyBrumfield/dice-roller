@@ -32,6 +32,10 @@ html, body {
     width: 100px;
 }
 
+.button-exalted {
+    background-color: rgb(255, 255, 128);
+}
+
 #blinker {
     background-color: white;
     height: 25px;
