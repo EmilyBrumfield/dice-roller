@@ -24,6 +24,7 @@ html, body {
 .button {
     background-color: rgb(245,245,245);
     border: 1px solid black;
+    border-radius: 20px;
     display: inline-block;
     font-size: 2em;
     height: 100px;
