@@ -28,6 +28,9 @@ function dieRoll(dieNum, dieSize) {  //rolls a number of dice of a certain size 
 function exDieRoll(dieNum) { //rolls dice from Exalted; ten-sided dice, target number 7, 10s count twice if double10s is true, returns successes
     //This doesn't yet handle funky charms like "reroll 6s once" and such; it'll eventually do that, but it's not a top priority
     //Double10s is now based on whether the matching checkbox is checked
+    /*Exalted 3e's charms are so complicated that implementing things like "double 9s" and "reroll 5s and 6s until 5s and 6s no longer appear"
+    and cascading "reroll one failed die per 10" would clutter up the interface to ridiculous extremes, so I'm not going to add them */
+
     var dieSize = 10; //Exalted dice are always d10s
     var double10s = false;
     if (document.getElementById("double10s").checked == true) {
@@ -134,13 +137,48 @@ function loadDiceLayout(fakeJSX){  //Loads one of the dice layouts into the cont
 function loadStandard(){
     var fakeJSX = '\
         <div id="dice-layout">\
-        <button class="button" onclick="roll(1, 4)">d4</button>\
-        <button class="button" onclick="roll(1, 6)">d6</button>\
-        <button class="button" onclick="roll(1, 8)">d8</button>\
-        <button class="button" onclick="roll(1, 10)">d10</button>\
-        <button class="button" onclick="roll(1, 12)">d12</button>\
-        <button class="button" onclick="roll(1, 20)">d20</button>\
-        <button class="button" onclick="roll(1, 100)">d100</button>\
+        <button class="button" onclick="roll(1, 4)">1d4</button>\
+        <button class="button" onclick="roll(1, 6)">1d6</button>\
+        <button class="button" onclick="roll(1, 8)">1d8</button>\
+        <button class="button" onclick="roll(1, 10)">1d10</button>\
+        <button class="button" onclick="roll(1, 12)">1d12</button>\
+        <button class="button" onclick="roll(1, 20)">1d20</button>\
+        \
+        <button class="button button--divider" onclick="roll(4, 4)">4d4</button>\
+        <button class="button" onclick="roll(4, 6)">4d6</button>\
+        <button class="button" onclick="roll(4, 8)">4d8</button>\
+        <button class="button" onclick="roll(4, 10)">4d10</button>\
+        <button class="button" onclick="roll(4, 12)">4d12</button>\
+        <button class="button" onclick="roll(4, 20)">4d20</button>\
+        <br \>\
+        <button class="button" onclick="roll(2, 4)">2d4</button>\
+        <button class="button" onclick="roll(2, 6)">2d6</button>\
+        <button class="button" onclick="roll(2, 8)">2d8</button>\
+        <button class="button" onclick="roll(2, 10)">2d10</button>\
+        <button class="button" onclick="roll(2, 12)">2d12</button>\
+        <button class="button" onclick="roll(2, 20)">2d20</button>\
+        \
+        <button class="button button--divider" onclick="roll(5, 4)">5d4</button>\
+        <button class="button" onclick="roll(5, 6)">5d6</button>\
+        <button class="button" onclick="roll(5, 8)">5d8</button>\
+        <button class="button" onclick="roll(5, 10)">5d10</button>\
+        <button class="button" onclick="roll(5, 12)">5d12</button>\
+        <button class="button" onclick="roll(5, 20)">5d20</button>\
+        <br \>\
+        <button class="button" onclick="roll(3, 4)">3d4</button>\
+        <button class="button" onclick="roll(3, 6)">3d6</button>\
+        <button class="button" onclick="roll(3, 8)">3d8</button>\
+        <button class="button" onclick="roll(3, 10)">3d10</button>\
+        <button class="button" onclick="roll(3, 12)">3d12</button>\
+        <button class="button" onclick="roll(3, 20)">3d20</button>\
+        \
+        <button class="button button--divider" onclick="roll(6, 4)">6d4</button>\
+        <button class="button" onclick="roll(6, 6)">6d6</button>\
+        <button class="button" onclick="roll(6, 8)">6d8</button>\
+        <button class="button" onclick="roll(6, 10)">6d10</button>\
+        <button class="button" onclick="roll(6, 12)">6d12</button>\
+        <button class="button" onclick="roll(6, 20)">6d20</button>\
+        <br \>\
         </div>\
     '
 
@@ -150,38 +188,38 @@ function loadStandard(){
 function loadExalted(){
     var fakeJSX = '\
         <div id="dice-layout">\
-        <button class="button button-exalted" onclick="exRoll(1)">EX 1</button>\
-        <button class="button button-exalted" onclick="exRoll(2)">EX 2</button>\
-        <button class="button button-exalted" onclick="exRoll(3)">EX 3</button>\
-        <button class="button button-exalted" onclick="exRoll(4)">EX 4</button>\
-        <button class="button button-exalted" onclick="exRoll(5)">EX 5</button>\
-        <button class="button button-exalted" onclick="exRoll(6)">EX 6</button>\
-        <button class="button button-exalted" onclick="exRoll(7)">EX 7</button>\
-        <button class="button button-exalted" onclick="exRoll(8)">EX 8</button>\
-        <button class="button button-exalted" onclick="exRoll(9)">EX 9</button>\
-        <button class="button button-exalted" onclick="exRoll(10)">EX 10</button>\
+        <button class="button button--exalted" onclick="exRoll(1)">EX 1</button>\
+        <button class="button button--exalted" onclick="exRoll(2)">EX 2</button>\
+        <button class="button button--exalted" onclick="exRoll(3)">EX 3</button>\
+        <button class="button button--exalted" onclick="exRoll(4)">EX 4</button>\
+        <button class="button button--exalted" onclick="exRoll(5)">EX 5</button>\
+        <button class="button button--exalted" onclick="exRoll(6)">EX 6</button>\
+        <button class="button button--exalted" onclick="exRoll(7)">EX 7</button>\
+        <button class="button button--exalted" onclick="exRoll(8)">EX 8</button>\
+        <button class="button button--exalted" onclick="exRoll(9)">EX 9</button>\
+        <button class="button button--exalted" onclick="exRoll(10)">EX 10</button>\
         <br \>\
-        <button class="button button-exalted" onclick="exRoll(11)">EX 11</button>\
-        <button class="button button-exalted" onclick="exRoll(12)">EX 12</button>\
-        <button class="button button-exalted" onclick="exRoll(13)">EX 13</button>\
-        <button class="button button-exalted" onclick="exRoll(14)">EX 14</button>\
-        <button class="button button-exalted" onclick="exRoll(15)">EX 15</button>\
-        <button class="button button-exalted" onclick="exRoll(16)">EX 16</button>\
-        <button class="button button-exalted" onclick="exRoll(17)">EX 17</button>\
-        <button class="button button-exalted" onclick="exRoll(18)">EX 18</button>\
-        <button class="button button-exalted" onclick="exRoll(19)">EX 19</button>\
-        <button class="button button-exalted" onclick="exRoll(20)">EX 20</button>\
+        <button class="button button--exalted" onclick="exRoll(11)">EX 11</button>\
+        <button class="button button--exalted" onclick="exRoll(12)">EX 12</button>\
+        <button class="button button--exalted" onclick="exRoll(13)">EX 13</button>\
+        <button class="button button--exalted" onclick="exRoll(14)">EX 14</button>\
+        <button class="button button--exalted" onclick="exRoll(15)">EX 15</button>\
+        <button class="button button--exalted" onclick="exRoll(16)">EX 16</button>\
+        <button class="button button--exalted" onclick="exRoll(17)">EX 17</button>\
+        <button class="button button--exalted" onclick="exRoll(18)">EX 18</button>\
+        <button class="button button--exalted" onclick="exRoll(19)">EX 19</button>\
+        <button class="button button--exalted" onclick="exRoll(20)">EX 20</button>\
         <br \>\
-        <button class="button button-exalted" onclick="exRoll(21)">EX 21</button>\
-        <button class="button button-exalted" onclick="exRoll(22)">EX 22</button>\
-        <button class="button button-exalted" onclick="exRoll(23)">EX 23</button>\
-        <button class="button button-exalted" onclick="exRoll(24)">EX 24</button>\
-        <button class="button button-exalted" onclick="exRoll(25)">EX 25</button>\
-        <button class="button button-exalted" onclick="exRoll(26)">EX 26</button>\
-        <button class="button button-exalted" onclick="exRoll(27)">EX 27</button>\
-        <button class="button button-exalted" onclick="exRoll(28)">EX 28</button>\
-        <button class="button button-exalted" onclick="exRoll(29)">EX 29</button>\
-        <button class="button button-exalted" onclick="exRoll(30)">EX 30</button>\
+        <button class="button button--exalted" onclick="exRoll(21)">EX 21</button>\
+        <button class="button button--exalted" onclick="exRoll(22)">EX 22</button>\
+        <button class="button button--exalted" onclick="exRoll(23)">EX 23</button>\
+        <button class="button button--exalted" onclick="exRoll(24)">EX 24</button>\
+        <button class="button button--exalted" onclick="exRoll(25)">EX 25</button>\
+        <button class="button button--exalted" onclick="exRoll(26)">EX 26</button>\
+        <button class="button button--exalted" onclick="exRoll(27)">EX 27</button>\
+        <button class="button button--exalted" onclick="exRoll(28)">EX 28</button>\
+        <button class="button button--exalted" onclick="exRoll(29)">EX 29</button>\
+        <button class="button button--exalted" onclick="exRoll(30)">EX 30</button>\
         <br \>\
         Double 10? <input id="double10s" type="checkbox" name="bob" value="yay" checked=true></input>\
         </div>\

@@ -18,7 +18,7 @@ html, body {
     font-size: 2em;
     height: 20%;
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 
 .button {
@@ -32,12 +32,16 @@ html, body {
     width: 100px;
 }
 
-.button-exalted {
+.button--divider {
+    margin-left: 40px;
+}
+
+.button--exalted {
     background-color: rgb(255, 255, 128);
 }
 
 #blinker {
     background-color: white;
     height: 25px;
-    width: 25px;
+    width: 100%;
 }
