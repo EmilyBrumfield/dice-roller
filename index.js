@@ -193,7 +193,7 @@ function loadExalted(){
         <button class="button button--exalted" onclick="exRoll(3)">EX 3</button>\
         <button class="button button--exalted" onclick="exRoll(4)">EX 4</button>\
         <button class="button button--exalted" onclick="exRoll(5)">EX 5</button>\
-        <button class="button button--exalted" onclick="exRoll(6)">EX 6</button>\
+        <button class="button button--exalted button--divider" onclick="exRoll(6)">EX 6</button>\
         <button class="button button--exalted" onclick="exRoll(7)">EX 7</button>\
         <button class="button button--exalted" onclick="exRoll(8)">EX 8</button>\
         <button class="button button--exalted" onclick="exRoll(9)">EX 9</button>\
@@ -204,7 +204,7 @@ function loadExalted(){
         <button class="button button--exalted" onclick="exRoll(13)">EX 13</button>\
         <button class="button button--exalted" onclick="exRoll(14)">EX 14</button>\
         <button class="button button--exalted" onclick="exRoll(15)">EX 15</button>\
-        <button class="button button--exalted" onclick="exRoll(16)">EX 16</button>\
+        <button class="button button--exalted button--divider" onclick="exRoll(16)">EX 16</button>\
         <button class="button button--exalted" onclick="exRoll(17)">EX 17</button>\
         <button class="button button--exalted" onclick="exRoll(18)">EX 18</button>\
         <button class="button button--exalted" onclick="exRoll(19)">EX 19</button>\
@@ -215,7 +215,7 @@ function loadExalted(){
         <button class="button button--exalted" onclick="exRoll(23)">EX 23</button>\
         <button class="button button--exalted" onclick="exRoll(24)">EX 24</button>\
         <button class="button button--exalted" onclick="exRoll(25)">EX 25</button>\
-        <button class="button button--exalted" onclick="exRoll(26)">EX 26</button>\
+        <button class="button button--exalted button--divider" onclick="exRoll(26)">EX 26</button>\
         <button class="button button--exalted" onclick="exRoll(27)">EX 27</button>\
         <button class="button button--exalted" onclick="exRoll(28)">EX 28</button>\
         <button class="button button--exalted" onclick="exRoll(29)">EX 29</button>\
