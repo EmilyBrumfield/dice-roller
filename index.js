@@ -127,6 +127,15 @@ var blinker = document.getElementById("blinker");
 
 }
 
+function changeBackground(newColor){  /*changes dice panel background color to the new color*/
+
+var panel = document.getElementById("content");
+  
+    panel.style.backgroundColor = newColor;
+
+}
+
+
 function loadDiceLayout(fakeJSX){  //Loads one of the dice layouts into the content panel
     outputReplace ("dice-layout", fakeJSX)
 };
@@ -225,6 +234,7 @@ function loadExalted(){
         </div>\
     '
 
+    changeBackground("rgb(159,171,183)");
     loadDiceLayout(fakeJSX);
 }
 
