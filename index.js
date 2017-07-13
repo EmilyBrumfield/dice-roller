@@ -190,7 +190,7 @@ function loadStandard(){
         <br \>\
         </div>\
     '
-
+    changeBackground("peachpuff");
     loadDiceLayout(fakeJSX);
 }
 
