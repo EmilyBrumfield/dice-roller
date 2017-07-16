@@ -26,10 +26,7 @@ function dieRoll(dieNum, dieSize) {  //rolls a number of dice of a certain size 
 }
 
 function exDieRoll(dieNum) { //rolls dice from Exalted; ten-sided dice, target number 7, 10s count twice if double10s is true, returns successes
-    //This doesn't yet handle funky charms like "reroll 6s once" and such; it'll eventually do that, but it's not a top priority
-    //Double10s is now based on whether the matching checkbox is checked
-    /*Exalted 3e's charms are so complicated that implementing things like "double 9s" and "reroll 5s and 6s until 5s and 6s no longer appear"
-    and cascading "reroll one failed die per 10" would clutter up the interface to ridiculous extremes, so I'm not going to add them */
+    //This doesn't yet handle funky charms like "reroll 6s once" and such; that stuff is fairly rare and would clutter up the interface too much
 
     var dieSize = 10; //Exalted dice are always d10s
     var double10s = false;
