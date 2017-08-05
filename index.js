@@ -236,8 +236,7 @@ function loadExalted(){
         <button class="button button--exalted" onclick="exRoll(29)">EX 29</button>\
         <button class="button button--exalted" onclick="exRoll(30)">EX 30</button>\
         </div>\
-        Double 10? <input id="double10s" type="checkbox" name="bob" value="yay" checked=true></input>\
-        </div>\
+    </div>\
     '
 
     changeBackground("rgb(159,171,183)");
