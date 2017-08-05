@@ -194,39 +194,48 @@ function loadStandard(){
 function loadExalted(){
     var fakeJSX = '\
         <div id="dice-layout">\
+        <div class="dice-section">\
         <button class="button button--exalted" onclick="exRoll(1)">EX 1</button>\
         <button class="button button--exalted" onclick="exRoll(2)">EX 2</button>\
         <button class="button button--exalted" onclick="exRoll(3)">EX 3</button>\
         <button class="button button--exalted" onclick="exRoll(4)">EX 4</button>\
         <button class="button button--exalted" onclick="exRoll(5)">EX 5</button>\
-        <button class="button button--exalted button--divider" onclick="exRoll(6)">EX 6</button>\
+        </div>\
+        <div class="dice-section">\
+        <button class="button button--exalted  onclick="exRoll(6)">EX 6</button>\
         <button class="button button--exalted" onclick="exRoll(7)">EX 7</button>\
         <button class="button button--exalted" onclick="exRoll(8)">EX 8</button>\
         <button class="button button--exalted" onclick="exRoll(9)">EX 9</button>\
         <button class="button button--exalted" onclick="exRoll(10)">EX 10</button>\
-        <br \>\
+        </div>\
+        <div class="dice-section">\
         <button class="button button--exalted" onclick="exRoll(11)">EX 11</button>\
         <button class="button button--exalted" onclick="exRoll(12)">EX 12</button>\
         <button class="button button--exalted" onclick="exRoll(13)">EX 13</button>\
         <button class="button button--exalted" onclick="exRoll(14)">EX 14</button>\
         <button class="button button--exalted" onclick="exRoll(15)">EX 15</button>\
-        <button class="button button--exalted button--divider" onclick="exRoll(16)">EX 16</button>\
+        </div>\
+        <div class="dice-section">\
+        <button class="button button--exalted" onclick="exRoll(16)">EX 16</button>\
         <button class="button button--exalted" onclick="exRoll(17)">EX 17</button>\
         <button class="button button--exalted" onclick="exRoll(18)">EX 18</button>\
         <button class="button button--exalted" onclick="exRoll(19)">EX 19</button>\
         <button class="button button--exalted" onclick="exRoll(20)">EX 20</button>\
-        <br \>\
+        </div>\
+        <div class="dice-section">\
         <button class="button button--exalted" onclick="exRoll(21)">EX 21</button>\
         <button class="button button--exalted" onclick="exRoll(22)">EX 22</button>\
         <button class="button button--exalted" onclick="exRoll(23)">EX 23</button>\
         <button class="button button--exalted" onclick="exRoll(24)">EX 24</button>\
         <button class="button button--exalted" onclick="exRoll(25)">EX 25</button>\
-        <button class="button button--exalted button--divider" onclick="exRoll(26)">EX 26</button>\
+        </div>\
+        <div class="dice-section">\
+        <button class="button button--exalted" onclick="exRoll(26)">EX 26</button>\
         <button class="button button--exalted" onclick="exRoll(27)">EX 27</button>\
         <button class="button button--exalted" onclick="exRoll(28)">EX 28</button>\
         <button class="button button--exalted" onclick="exRoll(29)">EX 29</button>\
         <button class="button button--exalted" onclick="exRoll(30)">EX 30</button>\
-        <br \>\
+        </div>\
         Double 10? <input id="double10s" type="checkbox" name="bob" value="yay" checked=true></input>\
         </div>\
     '

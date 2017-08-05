@@ -69,3 +69,7 @@ html, body {
     height: 1.25rem;
     width: 100%;
 }
+
+.dice-section {
+    display: inline-block;
+}
