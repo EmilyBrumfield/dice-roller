@@ -51,13 +51,9 @@ html, body {
     border-radius: 1.25rem;
     display: inline-block;
     font-size: 2rem;
-    height: 6.25rem;
+    height: 6.5rem;
     margin: 0.3125rem;
-    width: 6.25rem;
-}
-
-.button--divider {
-    margin-left: 2.5rem;
+    width: 6.5rem;
 }
 
 .button--exalted {
@@ -72,4 +68,5 @@ html, body {
 
 .dice-section {
     display: inline-block;
+    margin-right: 2.5rem;
 }
