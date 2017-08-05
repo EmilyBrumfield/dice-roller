@@ -145,42 +145,48 @@ function loadDiceLayout(fakeJSX){  //Loads one of the dice layouts into the cont
 function loadStandard(){
     var fakeJSX = '\
         <div id="dice-layout">\
+        <div class="dice-section">\
         <button class="button" onclick="roll(1, 4)">1d4</button>\
         <button class="button" onclick="roll(1, 6)">1d6</button>\
         <button class="button" onclick="roll(1, 8)">1d8</button>\
         <button class="button" onclick="roll(1, 10)">1d10</button>\
         <button class="button" onclick="roll(1, 12)">1d12</button>\
         <button class="button" onclick="roll(1, 20)">1d20</button>\
-        \
-        <button class="button button--divider" onclick="roll(4, 4)">4d4</button>\
-        <button class="button" onclick="roll(4, 6)">4d6</button>\
-        <button class="button" onclick="roll(4, 8)">4d8</button>\
-        <button class="button" onclick="roll(4, 10)">4d10</button>\
-        <button class="button" onclick="roll(4, 12)">4d12</button>\
-        <button class="button" onclick="roll(4, 20)">4d20</button>\
-        <br \>\
+        </div>\
+        <div class="dice-section">\
         <button class="button" onclick="roll(2, 4)">2d4</button>\
         <button class="button" onclick="roll(2, 6)">2d6</button>\
         <button class="button" onclick="roll(2, 8)">2d8</button>\
         <button class="button" onclick="roll(2, 10)">2d10</button>\
         <button class="button" onclick="roll(2, 12)">2d12</button>\
         <button class="button" onclick="roll(2, 20)">2d20</button>\
-        \
-        <button class="button button--divider" onclick="roll(5, 4)">5d4</button>\
-        <button class="button" onclick="roll(5, 6)">5d6</button>\
-        <button class="button" onclick="roll(5, 8)">5d8</button>\
-        <button class="button" onclick="roll(5, 10)">5d10</button>\
-        <button class="button" onclick="roll(5, 12)">5d12</button>\
-        <button class="button" onclick="roll(5, 20)">5d20</button>\
-        <br \>\
+        </div>\
+        <div class="dice-section">\
         <button class="button" onclick="roll(3, 4)">3d4</button>\
         <button class="button" onclick="roll(3, 6)">3d6</button>\
         <button class="button" onclick="roll(3, 8)">3d8</button>\
         <button class="button" onclick="roll(3, 10)">3d10</button>\
         <button class="button" onclick="roll(3, 12)">3d12</button>\
         <button class="button" onclick="roll(3, 20)">3d20</button>\
-        \
-        <button class="button button--divider" onclick="roll(6, 4)">6d4</button>\
+        </div>\
+        <div class="dice-section">\
+        <button class="button" onclick="roll(4, 4)">4d4</button>\
+        <button class="button" onclick="roll(4, 6)">4d6</button>\
+        <button class="button" onclick="roll(4, 8)">4d8</button>\
+        <button class="button" onclick="roll(4, 10)">4d10</button>\
+        <button class="button" onclick="roll(4, 12)">4d12</button>\
+        <button class="button" onclick="roll(4, 20)">4d20</button>\
+        </div>\
+        <div class="dice-section">\
+        <button class="button" onclick="roll(5, 4)">5d4</button>\
+        <button class="button" onclick="roll(5, 6)">5d6</button>\
+        <button class="button" onclick="roll(5, 8)">5d8</button>\
+        <button class="button" onclick="roll(5, 10)">5d10</button>\
+        <button class="button" onclick="roll(5, 12)">5d12</button>\
+        <button class="button" onclick="roll(5, 20)">5d20</button>\
+        </div>\
+        <div class="dice-section">\
+        <button class="button" onclick="roll(6, 4)">6d4</button>\
         <button class="button" onclick="roll(6, 6)">6d6</button>\
         <button class="button" onclick="roll(6, 8)">6d8</button>\
         <button class="button" onclick="roll(6, 10)">6d10</button>\
