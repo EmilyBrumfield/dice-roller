@@ -29,10 +29,12 @@ function exDieRoll(dieNum) { //rolls dice from Exalted; ten-sided dice, target n
     //This doesn't yet handle funky charms like "reroll 6s once" and such; that stuff is fairly rare and would clutter up the interface too much
 
     var dieSize = 10; //Exalted dice are always d10s
-    var double10s = false;
-    if (document.getElementById("double10s").checked == true) {
+    var double10s = true;  //placeholder; eventually the ability to get rid of double 10s might be restored, but currently removed for better interface
+    
+    //removed for now to simplify interface; originally allowed user to decide whether 10s should be doubled
+    /*if (document.getElementById("double10s").checked == true) {
         double10s = true;
-    }
+    }*/
 
     //Simple error handling
     if (dieNum < 1) {
