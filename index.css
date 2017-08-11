@@ -6,12 +6,14 @@ html, body {
 @media only screen and (min-width: 320px) {
     html, body {
         font-size: 6px;
+        height: 40%;
     }
 }
 
 @media only screen and (min-width: 720px) {
     html, body {
         font-size: 8px;
+        height: 60%;
     }
 }
 
