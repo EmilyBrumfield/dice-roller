@@ -84,4 +84,5 @@ html, body {
 .dice-section {
     display: inline-block;
     margin-right: 2.5rem;
+    vertical-align: top;
 }
