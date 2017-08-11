@@ -5,15 +5,15 @@ html, body {
 }
 
 @media only screen and (max-device-width: 720px) and (orientation: landscape) {
-    html, body, .button {
-        font-size: 16px;
+    html, body {
+        font-size: 24px;
         color: green;
             }
 }
 
 @media only screen and (max-device-width: 720px) and (orientation: portrait) {
-    html, body, .button {
-        font-size: 16px;
+    html, body {
+        font-size: 24px;
         color: red;
             }
 }
