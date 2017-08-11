@@ -6,14 +6,14 @@ html, body {
 
 @media only screen and (max-device-width: 720px) and (orientation: landscape) {
     html, body {
-        font-size: 8px;
+        font-size: 16px;
         color: green;
             }
 }
 
 @media only screen and (max-device-width: 720px) and (orientation: portrait) {
     html, body {
-        font-size: 8px;
+        font-size: 16px;
         color: red;
             }
 }
