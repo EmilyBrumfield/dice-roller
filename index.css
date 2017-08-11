@@ -7,12 +7,18 @@ html, body {
 /*@media only screen and (min-width: 320px) and (orientation: letter) {
     html, body {
         font-size: 6px;
+<<<<<<< HEAD
             }
+=======
+        height: 40%;
+    }
+>>>>>>> 81f3ef07de613580acb577bf36aaf2395373b4b9
 }
 
 @media only screen and (min-width: 720px) {
     html, body {
         font-size: 8px;
+        height: 60%;
     }
 }
 
