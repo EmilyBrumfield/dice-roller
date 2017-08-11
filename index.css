@@ -4,17 +4,30 @@ html, body {
     font-size: 16px;    
 }
 
-@media only screen and (min-width: 350px) {
+@media only screen and (min-width: 350px) and (orientation: landscape) {
     html, body {
         font-size: 25%;
     }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 350px) and (orientation: portrait) {
+    html, body {
+        font-size: 33%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (orientation: landscape) {
     html, body {
         font-size: 50%;
     }
 }
+
+@media only screen and (min-width: 700px) and (orientation: portrait) {
+    html, body {
+        font-size: 100%;
+    }
+}
+
 
 @media only screen and (min-width: 1400px) {
     html, body {
