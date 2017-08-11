@@ -1,3 +1,6 @@
+//TO DO: Make interface display propoerly on Kindles
+
+
 //CONTAINER FUNCTIONS
 
 function dieRoll(dieNum, dieSize) {  //rolls a number of dice of a certain size (number of sides), returns total
