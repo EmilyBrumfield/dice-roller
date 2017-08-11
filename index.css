@@ -4,6 +4,24 @@ html, body {
     font-size: 16px;    
 }
 
+@media only screen and (min-width: 350px) {
+    html, body {
+        font-size: 25%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    html, body {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    html, body {
+        font-size: 100%;
+    }
+}
+
 .content {
     height: 100%;
     width: 100%;
