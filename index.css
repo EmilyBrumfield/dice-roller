@@ -4,40 +4,40 @@ html, body {
     
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-device-width: 720px) and (orientation: landscape) {
     html, body {
-        font-size: 20px;
+        font-size: 16px;
             }
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-device-width: 720px) and (orientation: portrait) {
     html, body {
-        font-size: 20px;
+        font-size: 16px;
             }
 }
 
 
 @media only screen and (min-device-width: 721px) and (orientation: landscape) {
     html, body {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
 @media only screen and (min-device-width: 721px) and (orientation: portrait) {
     html, body {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
 @media only screen and (min-device-width: 1025px) and (orientation: landscape) {
     html, body {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
 @media only screen and (min-device-width: 1025px) and (orientation: portrait) {
     html, body {
-        font-size: 16px;
+        font-size: 12px;
     }
 }
 
