@@ -6,7 +6,7 @@ html, body {
 
 @media only screen and (min-width: 320px) and (orientation: landscape) {
     html, body {
-        font-size: 6px;
+        font-size: 36px;
             }
 }
 
@@ -19,7 +19,7 @@ html, body {
 
 @media only screen and (min-width: 720px) and (orientation: landscape) {
     html, body {
-        font-size: 6px;
+        font-size: 36px;
     }
 }
 
