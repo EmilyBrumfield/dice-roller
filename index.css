@@ -4,38 +4,38 @@ html, body {
     
 }
 
-@media only screen and (min-device-width: 320px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) {
     html, body {
         font-size: 6px;
             }
 }
 
-@media only screen and (min-device-width: 320px) and (orientation: portrait) {
+@media only screen and (orientation: portrait) {
     html, body {
         font-size: 12px;
             }
 }
 
 
-@media only screen and (min-device-width: 720px) and (orientation: landscape) {
+@media only screen and (min-device-width: 721px) and (orientation: landscape) {
     html, body {
         font-size: 6px;
     }
 }
 
-@media only screen and (min-device-width: 720px) and (orientation: portrait) {
+@media only screen and (min-device-width: 721px) and (orientation: portrait) {
     html, body {
         font-size: 12px;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 1025px) and (orientation: landscape) {
     html, body {
         font-size: 16px;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 1025px) and (orientation: portrait) {
     html, body {
         font-size: 24px;
     }
